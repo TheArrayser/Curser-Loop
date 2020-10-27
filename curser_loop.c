@@ -1,5 +1,6 @@
 #include <winuser.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int main(){
     int screenx = GetSystemMetrics(SM_CXSCREEN);
@@ -27,5 +28,6 @@ int main(){
             printf("sth went wrong");
             return 0;
         }
+        usleep(16666);
     }
 }
